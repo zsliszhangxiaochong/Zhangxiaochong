@@ -1,8 +1,88 @@
-<div id="header">
-    <h1>My Website</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+<!-- div标签定义了一个分区或部分，用于在网页中组织和包含其他的HTML元素，充当了一个容器的作用 -->
+<!-- 分区和组织内容，将标题和段落组织在一起，划分出不同的区域-->
+
+<div>
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element</p>
 </div>
+<!-- div用于将标题和段落组织到一起，h2表示标题，副标题或者其他重要的文本，二级标题，p表示文本段落 -->
+
+<!-- 样式布置，通过div来添加class:用于指定一个或者多个类，为HTML元素分组或应用样式或者id：全局标识符，唯一标识一个HTML元素属性，来设置背景颜色，边框，内外边距等 -->
+<style>
+  .myDiv {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+  }
+  /* .myDiv是一个CSS类 */
+</style>
+<!-- style用于嵌入CSS样式 -->
+<div class="myDiv">
+  <h2>This is a styled heading</h2>
+  <p>This is some styled text</p>
+</div>
+
+<!-- 布局作用 -->
+<div id="header">
+  <!-- id是唯一全局标识符，header表示出现在网页顶部 -->
+  <h1>My Website</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</div>
+<!-- h1是网站的大标题，nav元素用于定义导航链接，a是锚点元素，用于创建链接，href属性指定链接的目标地址 -->
+
+<!-- javaScript操作：使用 JavaScript 操作 <div> 中的内容，例如动态添加、删除或修改元素。 -->
+<div id="myDiv">
+  <button onclick="changeText()">Click me</button>
+  <p id="displayText">Original</p>
+</div>
+<script>
+  function changeText() {
+    document.getElementById('displayText').innerHTML = 'New text!'
+  }
+</script>
+<!-- id="myDiv"以便于访问这个元素 -->
+<!-- id的作用相当于定位和CSS类的引用 -->
+
+<!-- span标签在HTML中的作用是创建一个内联容器，用于标记文本的一部分或整个文档的一部分 -->
+<!-- 标记文本的一部分，在段落中标记特定单词的颜色 -->
+<p>
+  My mother has
+  <span style="color: blue">blue</span>
+  eyes.
+</p>
+
+<!-- 分组元素 将一组元素放在同一个容器中，以便于应用相同的样式-->
+<span class="highlight">Important</span>
+<span class="highlight">Details</span>
+
+<!-- 替代语义元素：当没有其他的语义元素可用是，使用<span>来表示一部分文本 -->
+<span lang="fr">Bonjour</span>
+<!-- lang="fr"表明这段文本是法语 -->
+<!-- span的属性有class:用于指定一个或者多个CSS类，id:用于指定一个唯一的标识符，以便在样式表中引用或者在javaScript中访问和操作这个元素，全局属性， -->
+
+<!-- p标签是段落标签，用于定义文本的段落，可以将文本的内容按照逻辑的形式展示 -->
+<p>你好，我叫张少龙，很高兴认识你</p>
+<p>这是我学习前端的初始学习，希望以后我能变成一个编程高手</p>
+
+<!-- h1标签的作用就是提供一个大标题 -->
+<h1>这是一个标题</h1>
+<h2>这是一个标题</h2>
+<h3>这是一个标题</h3>
+
+<!-- br 是没有关闭标签的空元素，通常起到换行的作用 -->
+<br />
+<p>这是一个空元素，起到换行的作用</p>
+<br />
+<p>我看看是不是这样的？</p>
+
+<p>
+  This is
+  <br />
+  a para
+  <br />
+  graph with line breaks
+</p>
