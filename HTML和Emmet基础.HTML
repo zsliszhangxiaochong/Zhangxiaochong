@@ -86,3 +86,320 @@
   <br />
   graph with line breaks
 </p>
+
+<!-- hr标签在HTML元素中表示段落级元素之间的主题转换，通常显示为一条水平线，用于在HTML元素中分隔内容或定义内容上的变化 -->
+<h1>Web的主要语言</h1>
+<p>HTML是创建Web页面的标准标记语言。HTML描述了Web页面结构，有一系列元素组成</p>
+<hr />
+<p>CSS是一种描述HTML元素在屏幕、纸张或其他媒体上显示方式的语言...</p>
+<hr />
+<p>JavaScript是HTML和Web的编程语言。JavaScript可以更改HTML内容和属性值...</p>
+
+<!-- table用于定义HTML表格，一个简单的HTML表格由table和一个或者多个tr，th和td元素组成 -->
+<table>
+  <tr>
+    <th>月份</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>$3400</td>
+  </tr>
+</table>
+<!-- th是定义表头单元格，td是表示数据单元格,tr用于定义行-->
+<br />
+<!-- 折叠边框的表格 -->
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+<table>
+  <tr>
+    <th>月份</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>￥3400</td>
+  </tr>
+  <tr>
+    <td>二月</td>
+    <td>￥4500</td>
+  </tr>
+</table>
+
+<!-- 右对齐的表格 -->
+<table style="float: right">
+  <tr>
+    <th>月份</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>￥3400</td>
+  </tr>
+  <tr>
+    <td>二月</td>
+    <td>￥4500</td>
+  </tr>
+</table>
+<br />
+<br />
+<br />
+<!-- 居中对齐的表格 -->
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+<table class="center">
+  <tr>
+    <th>月份</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>￥3400</td>
+  </tr>
+  <tr>
+    <td>二月</td>
+    <td>￥4500</td>
+  </tr>
+</table>
+<!-- 带背景颜色的表格 -->
+<br />
+<table style="background-color: #00ff00">
+  <tr>
+    <th>月份</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>￥3400</td>
+  </tr>
+  <tr>
+    <td>二月</td>
+    <td>￥4500</td>
+  </tr>
+</table>
+
+<!-- 带内边距的表格 -->
+<br />
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  th,
+  td {
+    padding: 10px;
+  }
+</style>
+<table>
+  <tr>
+    <th>月份</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>￥3400</td>
+  </tr>
+  <tr>
+    <td>二月</td>
+    <td>￥4500</td>
+  </tr>
+</table>
+
+<!-- 设置表格宽度 -->
+<table style="width: 40px">
+  <tr>
+    <th>月份</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>￥3400</td>
+  </tr>
+  <tr>
+    <td>二月</td>
+    <td>￥4500</td>
+  </tr>
+</table>
+
+<!-- 设置表头 -->
+<table>
+  <tr>
+    <th>姓名</th>
+  </tr>
+</table>
+
+<br />
+<!-- ul用于在HTML标签中创建无序列表，允许我们以项目符号的形式组织语言 -->
+<!-- 简单的无序列表 -->
+<ul>
+  <li>苹果</li>
+  <li>香蕉</li>
+  <li>橙子</li>
+</ul>
+<!-- li表示单个项目 -->
+
+<!-- 自定义项目符号 -->
+<ul type="circle">
+  <li>红色</li>
+  <li>蓝色</li>
+  <li>绿色</li>
+</ul>
+
+<!-- 嵌套列表 -->
+<ul>
+  <li>
+    水果
+    <ul>
+      <li>苹果</li>
+      <li>香蕉</li>
+      <li>橙子</li>
+    </ul>
+  </li>
+  <li>
+    蔬菜
+    <ul>
+      <li>胡萝卜</li>
+      <li>西蓝花</li>
+      <li>土豆</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- img标签用于在HTML中嵌入图像 -->
+<img src="C:\Users\asus\Pictures\Camera Roll\夏梦..gif" alt="夏梦的照片" />
+<!-- src指定了图像的路径，alt属性提供了一个备用的描述 -->
+<br />
+<!-- HTML的作用是什么？ -->
+<div>
+  <h2>HTML的作用是什么？</h2>
+  <p>来定义了网页的结构，包括文本，图像，链接和其他元素的排列方式</p>
+</div>
+
+<div class="header">
+  <h1>欢迎来到我们的网站</h1>
+</div>
+
+<div class="content">
+  <p>这是一个关于我们的简短介绍。</p>
+  <ul>
+    <li><a href="#">服务1</a></li>
+    <li>服务2</li>
+    <li>服务3</li>
+  </ul>
+</div>
+
+<!-- Emmt是什么，能用来干什么 -->
+<div>
+  <h2>Emmt是什么，能用来干什么?</h2>
+  <p>
+    Emmt是一套用来面向文本编辑器的插件，极大地改善了HTML和CSS
+    的工作流程。Emmet可以通过缩写语法快速编写和编辑HTML，XML，XSL，和其他结构化的代码格式
+  </p>
+  <br />
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid black;
+    }
+    td,
+    th {
+      padding: 10px;
+    }
+  </style>
+  <table>
+    <tr>
+      <th>Emmet的作用</th>
+    </tr>
+    <tr>
+      <td>快速编写HTML和CSS</td>
+    </tr>
+    <tr>
+      <td>自动生成文档结构</td>
+    </tr>
+    <tr>
+      <td>快速添加类，ID，文本和属性</td>
+    </tr>
+    <tr>
+      <td>嵌套和分组</td>
+    </tr>
+    <tr>
+      <td>重复添加相同的元素</td>
+    </tr>
+  </table>
+</div>
+
+<!-- >操作符用于描述元素的嵌套关系，将一个元素嵌套在另一个元素内部 -->
+<!-- 子元素嵌套 -->
+<div>
+  <ul></ul>
+</div>
+
+<!-- +元素表示同层 -->
+<div></div>
+<p></p>
+<blockquote></blockquote>
+
+<!-- ^表示返回父层 -->
+<div></div>
+<div>
+  <p>
+    <span></span>
+    <em></em>
+  </p>
+  <blockquote></blockquote>
+</div>
+
+<!-- ()用于分组，对复杂的子元素进行分组，每个()中的内容都是一个独立的子元素 -->
+<!-- <div>
+  <header>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </header>
+  <footer>
+    <p></p>
+  </footer>
+</div> -->
+
+<!-- *用于重复元素 -->
+<!-- $表示按序技术 -->
+<!-- <ul>
+  <li class="item1"></li>
+  <li class="item2"></li>
+  <li class="item3"></li>
+</ul> -->
+
+<!-- lorem生成随机的占位符 -->
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam quae quidem enim, vel,
+  omnis quas non impedit inventore excepturi reiciendis quo sed quis quia animi expedita nisi. Odit,
+  nobis.
+</p>
+
+<br />
+<ul class="generic-list">
+  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, expedita.</li>
+  <li>Molestiae fugit recusandae ullam iste amet distinctio animi iure libero!</li>
+  <li>Porro iste natus, consequuntur ex molestias eum repellendus ut veniam.</li>
+  <li>Vitae amet laborum, expedita voluptates nulla impedit natus praesentium hic!</li>
+</ul>
+
+<!-- 行，基本上到这里大致就完事了，接下来就是努力刷刷题目了 -->
