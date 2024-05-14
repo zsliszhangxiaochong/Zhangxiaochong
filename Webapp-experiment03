@@ -116,6 +116,49 @@
           </ul>
         </div>
       </div>
+      <div class="area row">
+        <div class="area col-md-3 sidebar">
+          <div class="sidebar-group">
+            <h2>张小虫的第一次作业</h2>
+            <ul>
+              <li><a href="#">HTML基础</a></li>
+              <li><a href="#">Emmet语法</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-group">
+            <h2>张小虫的第二次任务</h2>
+            <ul>
+              <li><a href="#">HTML表单</a></li>
+              <li><a href="#">CSS基本属性</a></li>
+              <li><a href="#">实验三</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="area col-md-9">
+          <h1>设计内容</h1>
+          <p>为各部分区域设计统一样式；全局取消元素内外边距，按box尺寸计算</p>
+          <h3>需求0</h3>
+          <p>
+            基于当前HTML代码，按12栅格布局页面。Container根容器居中最大宽度960px；Row弹性行容器；
+            header/footer各占1行12列；main中sidebar占3列；article占9列。
+          </p>
+          <h3>上导航+1</h3>
+          <p>header中声明上导航，添加背景色/悬浮字体颜色等样式，且将logout推至最右侧</p>
+          <h3>页脚+1</h3>
+          <p>元素居中</p>
+          <h3>左侧边栏+1</h3>
+          <p>为左侧边栏添加样式，添加背景色/字体色/悬浮等等样式</p>
+        </div>
+      </div>
+      <div class="area row">
+        <div class="col-md-12 footer">
+          <p>
+            东北林业大学
+            <br />
+            软件工程专业
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
