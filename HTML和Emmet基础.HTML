@@ -16,7 +16,7 @@
   }
   /* .myDiv是一个CSS类 */
 </style>
-<!-- style用于嵌入CSS样式 -->
+<!-- style用于嵌入CSS样式
 <div class="myDiv">
   <h2>This is a styled heading</h2>
   <p>This is some styled text</p>
@@ -96,28 +96,30 @@
 <p>JavaScript是HTML和Web的编程语言。JavaScript可以更改HTML内容和属性值...</p>
 
 <!-- table用于定义HTML表格，一个简单的HTML表格由table和一个或者多个tr，th和td元素组成 -->
-<table>
-  <tr>
-    <th>月份</th>
-    <th>储蓄</th>
-  </tr>
-  <tr>
-    <td>一月</td>
-    <td>$3400</td>
-  </tr>
-</table>
+<div>
+  <table>
+    <tr>
+      <th>月份</th>
+      <th>储蓄</th>
+    </tr>
+    <tr>
+      <td>一月</td>
+      <td>$3400</td>
+    </tr>
+  </table>
+</div>
 <!-- th是定义表头单元格，td是表示数据单元格,tr用于定义行-->
 <br />
 <!-- 折叠边框的表格 -->
-<style>
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-</style>
-<table>
+<!-- <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style> -->
+<table class="youdiv">
   <tr>
     <th>月份</th>
     <th>储蓄</th>
@@ -151,7 +153,7 @@
 <br />
 <br />
 <!-- 居中对齐的表格 -->
-<style>
+<!-- <style>
   table,
   th,
   td {
@@ -161,7 +163,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-</style>
+</style> -->
 <table class="center">
   <tr>
     <th>月份</th>
@@ -195,7 +197,7 @@
 
 <!-- 带内边距的表格 -->
 <br />
-<style>
+<!-- <style>
   table,
   th,
   td {
@@ -205,7 +207,7 @@
   td {
     padding: 10px;
   }
-</style>
+</style> -->
 <table>
   <tr>
     <th>月份</th>

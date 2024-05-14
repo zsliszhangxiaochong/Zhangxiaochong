@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- input的一个属性，accept的用法，规定用户可以选择的文件类型 -->
+    <h2>上传图像文件</h2>
+    <p>点击下面的按钮选择一个图像文件上传</p>
+    <form action="/action_page.php">
+      <input type="file" id="myFile" name="filename" accept="image/*" />
+      <input type="submit" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <!-- accept-charset的用法，form的一个属性，规定表单提交时应使用的字符编码 -->
+    <h2>这是一个简单的表单</h2>
+    <p>这个表单使用了accept-charset属性：</p>
+    <form action="/action_page.php" accept-charset="UTF-8">
+      <!-- form标签用于创建表单，提供了让用户输入的区域，action提供了表单数据发送的地址，for属性指定了标签和哪个表单元素相连,label标签定义输入元素的的标签，input标签用于创建交互式的控件 -->
+      <label for="fname">名字：</label>
+      <input type="text" name="fname" />
+      <br />
+      <br />
+      <input type="submit" value="提交" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <!-- autocomplete是一个属性，应用于form，input，textarea，select元素，允许开发人员指定用户代理是否有权限在填写表单字段值是提供自动帮助，并指导浏览器填写该字段的预期信息类型 -->
+    <form action="/action_page.php" autocomplete="off">
+      姓名：
+      <input type="text" name="fname" />
+      <br />
+      邮箱：
+      <input type="text" name="email" />
+      <br />
+      <input type="submit" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <!-- enctype是form的属性，指定了表单被提交到服务器时的编码类型，
+application/x-www-form-urlencoded：默认值，素有字符发送前都会被编码
+multipart/form-data：如果用户需要通过表单上传文件，需要使用这个值 -->
+    <!-- method是form标签的属性，指定了当表单数据被提交时应该使用的HTTP方法，get是把数据附加在UPL中，post是以HTTP POST事务发送 -->
+    <form action="/action_page.php" method="get">
+      <label for="fname">名字：</label>
+      <input type="text" id="fname" />
+      <br />
+      <br />
+      <input type="submit" value="提交" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <form>
+      User Name
+      <br />
+      <input type="text" />
+      <br />
+      User Password
+      <br />
+      <input type="password" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <!-- checkbox定义了一个复选框 -->
+    <form>
+      <input type="checkbox" id="coding" name="interest" value="coding" />
+      <label for="coding">编码</label>
+      <br />
+      <input type="checkbox" id="musice" name="interest" value="musice" />
+      <label for="music">音乐</label>
+      <input type="submit" value="提交" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <br />
+    <hr />
+    <br />
+    <head>
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        .topnav a:hover {
+          background-attachment: #ddd;
+          color: black;
+        }
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+      </style>
+
+      <div class="topnav">
+        <a href="#home">主页</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系我们</a>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="#about">关于</a>
+        <a href="#services">服务</a>
+        <a href="#clients">客户</a>
+        <a href="#contact">联系我们</a>
+      </div>
+    </head>
+    <br />
+    <hr />
+    <br />
+    <!-- title定义了文档的标题，显示在浏览器的标题栏或者标签页上
+    style用于包含文档的内联CSS
+    meta用于提供关于HTML文档的元数据，如字符集，视口设计，描述，作者等
+    link定义了文档与外部资源的关系，常用于链接CSS文件或者图标
+    base定义了相对URL的基础URL，所有的相对URL都会以这个URL为基础进行解析 -->
+  </body>
+</html>
