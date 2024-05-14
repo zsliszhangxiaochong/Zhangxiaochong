@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 960px;
+        margin: auto;
+      }
+      .area {
+        padding: 10px;
+        border: 1px solid #23e44d;
+      }
+      .row {
+        display: flex;
+        align-items: flex-start;
+      }
+      /* 导航栏 */
+      .nav {
+        display: flex;
+        background: #333;
+        list-style: none;
+      }
+      .nav a:hover {
+        background-color: #f1f1f1;
+      }
+      .nav .right {
+        margin-left: auto;
+      }
+      /* 侧边栏 */
+      .sidebar {
+        min-width: 200px;
+      }
+      .sidebar-group {
+        background: #f1f1f1;
+      }
+      .sidebar-group > ul {
+        list-style: none;
+      }
+      .sidebar-group > h2 {
+        background: #3185bf;
+        color: white;
+        padding: 10px 20px;
+      }
+      .sidebar-group a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: transform 0.5s;
+      }
+      .sidebar-group a:hover {
+        background: #ddd;
+        color: white;
+        transform: scale(1.1);
+      }
+      /* 尾部CSS样式 */
+      .footer {
+        text-align: center;
+      }
+      /*-------- 12栅格 -----------  */
+      .col-md-1 {
+        width: 8.33%;
+      }
+      .col-md-2 {
+        width: 16.67%;
+      }
+      .col-md-3 {
+        width: 25%;
+      }
+      .col-md-4 {
+        width: 33.33%;
+      }
+      .col-md-5 {
+        width: 41.67%;
+      }
+      .col-md-6 {
+        width: 50%;
+      }
+      .col-md-7 {
+        width: 58.33%;
+      }
+      .col-md-8 {
+        width: 66.67%;
+      }
+      .col-md-9 {
+        width: 75%;
+      }
+      .col-md-10 {
+        width: 83.33%;
+      }
+      .col-md-11 {
+        width: 91.67%;
+      }
+      .col-md-12 {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="area row">
+        <div class="col-md-12">
+          <ul class="nav">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Logout">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
