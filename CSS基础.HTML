@@ -1,3 +1,232 @@
 <html>
-  <body></body>
+  <head>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      p {
+        color: red;
+      }
+      .blue {
+        color: blue;
+      }
+    </style>
+
+    <style>
+      .box {
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 30px;
+        background-color: lightgreen;
+      }
+    </style>
+
+    <style>
+      .block {
+        display: block;
+        margin-bottom: 20px;
+        background-color: lightpink;
+      }
+      .inline {
+        display: inline;
+        background-color: lightgreen;
+      }
+    </style>
+    <style>
+      img.middle {
+        vertical-align: middle;
+      }
+    </style>
+    <style>
+      .container {
+        display: table;
+        width: 100%;
+      }
+      .row {
+        display: table-row;
+        /* border: 1px solid black; */
+      }
+      .cell {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid black;
+      }
+    </style>
+    <style>
+      img {
+        float: right;
+        margin: 0 0 10px 10px;
+      }
+    </style>
+    <style>
+      .relative {
+        position: relative;
+        left: 30px;
+        border: 1px solid black;
+      }
+    </style>
+    <style>
+      .box {
+        width: 300px;
+        padding: 10px;
+        border: 5px solid black;
+      }
+      .border-box {
+        box-sizing: border-box;
+      }
+    </style>
+    <style>
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Element选择器根据元素名选择元素
+     id选择器可以选择具有特定id属性的单个元素
+     class选择器可以选择具有特定类属性的元素 -->
+
+    <!-- Cascading是指当多个CSS样式规则应用到同一个HTML元素师，浏览器要如何解决冲突并确定最终的样式表 -->
+    <div>
+      <p class="blue">这段文字将会被显示为蓝色</p>
+    </div>
+    <!-- 类选择器高于元素选择器 -->
+
+    <!-- Units是用来指定各种属性（如宽度，高度，字体，大小等）的值的度量单位
+像素px,百分比%,em相对于元素的字体大小,rem相对于根元素的字体大小,vh和vw相对于浏览器窗口的高度1vh相当于1%的视口高度 -->
+
+    <!-- Box Model盒模型，用来描述元素如何被渲染到网页上的一个模型，每个HTML元素都可以被看做是一个盒子，由四个方面组成内容（Content）内边距（Padding）边框（Border）外边距（Margin） -->
+    <br />
+    <hr />
+    <br />
+
+    <div class="box">这是一个盒模型的例子</div>
+
+    <br />
+    <hr />
+    <br />
+    <!-- Background/image/text/opacity都是CSS中的属性
+    Background用来设置元素的背景
+    image：background-image用来在元素的背景中显示一张图片
+    Text:color属性用来设置文本的颜色
+    Opacity：该属性用于设置元素的透明度，值在0（完全透明）和1（完全不透明之间） -->
+
+    <!-- Combinators组合器是用来组合两个或者更多的选择器，以选择特定的元素，四种基本组合器：
+后代选择器（空格）：选择后代所有的元素
+子元素选择器（>）只选择直接的子元素 
+相邻兄弟选择器（+）选择紧接在另一个元素后面的元素，且二者有相同的父元素
+一般兄弟选择器（~）
+div p{
+    color:red;
+}
+div > p{
+    color:blue;
+}
+div+p{
+    font-size：20px;
+}
+div~p{
+    font-weight:bold;
+}-->
+
+    <!-- display是一个CSS属性，决定了一个元素应该如何在网页上显示
+block：元素会左元块级元素显示，即新的内容会在其下方开始
+inline：元素会作为内联元素显示
+none：元素不会在页面上显示
+inline-block：元素以内联元素的方式显示，但是可以设置宽度和高度
+flex：元素会变成弹性盒子布局的容器 -->
+    <div class="block">我是一个块级元素</div>
+    <span class="inline">我是一个内联元素</span>
+    <span class="inline">我也是一个内联元素</span>
+
+    <br />
+    <hr />
+    <br />
+    <!-- vertical-align是一个CSS属性，用于设置元素的垂直对齐方式，常用于设置行内元素或者表格单元格的垂直对齐
+baseline:元素的基线与父元素的基线对齐（默认值）
+sub：元素的基线和父元素的下标基线对齐
+super：元素的基线与父元素的上标基线对齐
+top：元素的顶部与行的最高元素的顶部对齐
+middle：元素的中点与父元素的基线加上父元素的x-height的一半对齐
+bottom：元素的底部与行的最低元素的底部对齐 -->
+    <p>
+      这是一段文本
+      <img
+        class="middle"
+        src="https://c-ssl.duitang.com/uploads/item/201910/24/20191024144146_kdsxo.jpg"
+        alt="我的图片" />
+      图片将会垂直居中对齐
+    </p>
+    <br />
+    <hr />
+    <br />
+    <!-- table是display属性的一个值，可以使块级元素（div）表现的想HTML的table元素一样 -->
+    <div class="container">
+      <div class="row">
+        <div class="cell">我是单元格1</div>
+        <div class="cell">我是单元格2</div>
+      </div>
+      <div class="row">
+        <div class="cell">我是单元格3</div>
+        <div class="cell">我是单元格4</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- float是一个CSS属性，可以使元素向左向右移动，使文本和内联元素环绕它，float属性的值可以是left，right或none -->
+    <p>
+      这是一段文本。这是一段文本。这是一段文本。这是一段文本。这是一段文本。
+      这是一段文本。这是一段文本。这是一段文本。这是一段文本。这是一段文本。
+      <img
+        src="https://c-ssl.duitang.com/uploads/item/201910/24/20191024144146_kdsxo.jpg"
+        alt="Placeholder image" />
+    </p>
+    <br />
+    <hr />
+    <br />
+    <!-- positon是一个CSS属性，定义了元素在网页上的定位方式
+static：元素的默认值，元素按照正常的文档流进行定位
+relative：元素相对于其正常位置进行定位
+absolute：元素相对于最近的非static定位的祖先元素进行定位
+fixed元素相对与浏览器窗口进行定位，及时页面规定，它也保持在同一位置
+sticky：元素在滚动范围内相对于最近的滚动祖先和包含块，取决于最近的一个具有滚动框的祖先元素 -->
+    <p>我是一个段落。</p>
+    <p class="relative">我是一个相对定位的段落，向左移动了30像素</p>
+    <br />
+    <hr />
+    <br />
+    <!-- box-sizing用来定义元素的宽度和高度应该如何计算
+content-box：默认值，元素的宽度和高度只包括内容本身
+border-box:元素的宽度和高度包括内容，边框和内边距，但不包括外边距 -->
+    <div class="box">
+      我是一个普通的盒子，我的总宽度是325px（300px的内容宽度 + 2 * 10px的内边距 + 2 * 5px的边框）。
+    </div>
+    <div class="box border-box">我是一个border-box盒子，我的总宽度是300px。</div>
+    <!-- Nabigation Bar导航栏是网页的一个重要组成部分，用户帮助用户在网站的不同部分之间进行导航 -->
+    <br />
+    <hr />
+    <br />
+    <div class="navbar">
+      <a href="#home">主页</a>
+      <a href="#news">新闻</a>
+      <a href="#contact">联系我们</a>
+      <a href="#about">关于</a>
+    </div>
+    <p>在这里，你可以添加网页的其他内容。</p>
+  </body>
 </html>
