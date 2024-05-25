@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework02</title>
+    <style>
+      /* * {
+        border: 1px solid black;
+      } */
+      .container {
+        max-width: 960px;
+        margin: 15px auto;
+      }
+      .row {
+        display: flex;
+      }
+      .card {
+        width: auto;
+        padding: 10px;
+        margin: 1px;
+        border: 1px solid white;
+        transition: box-shadow 0.3s ease; /* 添加过渡效果 */
+        border-style: inset;
+      }
+      .card-header {
+        width: 100%;
+        margin: auto;
+      }
+      .card-header img {
+        border-radius: 50%;
+        opacity: 0.5;
+        margin: auto;
+        width: 100%;
+        /* align-items: center; */
+        /* object-fit: cover; */
+      }
+      .card-content {
+        text-align: justify;
+        display: flex;
+      }
+      .card-footer a {
+        display: flex;
+        width: 30%;
+        opacity: 0.5;
+        color: white;
+        background-color: red;
+        text-decoration: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding: 1px;
+      }
+      .card:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* 当鼠标悬浮在卡片上时，添加阴影 */
+      }
+      .card:hover .card-header img {
+        opacity: 1;
+      }
+      .card-footer a:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://picsum.photos/200/200/?random=1" alt="" />
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis dolorum
+              ducimus iste laudantium non optio reprehenderit tenetur ullam! Aliquid at, commodi
+              deserunt dolorem eligendi fugiat natus nihil non nostrum quisquam, ratione.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a class="more" href="">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="https://picsum.photos/200/200/?random=2" alt="" />
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis dolorum
+              ducimus iste laudantium non optio reprehenderit tenetur ullam! Aliquid at, commodi
+              deserunt dolorem eligendi fugiat natus nihil non nostrum quisquam, ratione.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a class="more" href="">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="https://picsum.photos/200/200/?random=3" alt="" />
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis dolorum
+              ducimus iste laudantium non optio reprehenderit tenetur ullam! Aliquid at, commodi
+              deserunt dolorem eligendi fugiat natus nihil non nostrum quisquam, ratione.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a class="more" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
