@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS_basement</title>
+  </head>
+  <body>
+    <!-- dobucment.getElementById()是JS的一个方法，它用户获取具有指定ID的元素，这个方法会返回一个表示该元素的对象，如果没有找到具有指定ID的元素，则会返回 -->
+    <div id="myDiv">Hello,world</div>
+    <script>
+      var element = document.getElementById('myDiv')
+      element.textContent = 'Hello,Copilot!'
+    </script>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <button type="button" onclick="show()">点击获取JS中的值</button>
+      <div id="demo">被替换为JS对象中的值</div>
+    </div>
+    <script>
+      let person = {
+        firstname: 'John',
+        lastname: 'Doe',
+        id: 5566,
+        getFullName() {
+          return `${this.firstname}/${this.lastname}`
+        }
+      }
+      let show = () => {
+        document.getElementById('demo').innerHTML = person.getFullName()
+      }
+    </script>
+    <br />
+    <hr />
+    <br />
+    <!-- arrays；for-of/for-in/forEach()/find()/map()/filter()/sort()/splice()/includes();
+onclick/onchange/onkeyup/onkeydown events；
+document/getElementById() -->
+    <!-- arrays:对象数组 -->
+    <!-- for/of是循环语法 -->
+    <!-- for/in用来遍历对象的属性 -->
+    <!-- forEach是数组的一个方法，用于遍历数组的每一个元素，并且对每一个元素执行一个函数。这个函数会接受三个参数：当前元素，当前元素的索引和数组本身 -->
+    <!-- find是数组的一个方法，用于找到满足数组中提供的测试函数的第一个元素的值 -->
+    <!-- map是数组的一个方法，创建了一个新的数组 -->
+    <!-- filter是一个数组方法，用于创建一个新的数组 -->
+    <!-- sort是一个数组方法，用于对数组元素进行排序，并返回排序后的数组 -->
+    <!-- splice是一个数组方法，用于改变数组的内容 -->
+    <!-- includes是一个方法，用于检查字符串中是否包含另一个字符串，或者一个数组是否包含某个元素 -->
+
+    <!-- onclick是一个事件，当用户点击HTML元素的时候会触发 -->
+    <button onclick="myFunction()">点击我</button>
+    <script>
+      function myFunction() {
+        alert('按钮被点击了')
+      }
+    </script>
+    <br />
+    <hr />
+    <br />
+    <!-- onchange是个事件，当HTML元素的值发生改变时，它会被触发，这个事件通常用于input,select,和textarea中 -->
+    <select id="osDemo" onchange="detectChange(this)">
+      <option value="Linux">Linux</option>
+      <option value="Windows">Windows</option>
+      <option value="MacOs">MacOs</option>
+    </select>
+    <script>
+      function detectChange(selectObject) {
+        var selectOption = selectObject.value
+        alert('你选择了：' + selectOption)
+      }
+    </script>
+  </body>
+</html>

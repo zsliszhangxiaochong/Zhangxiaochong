@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework_04</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+      }
+      .left-nav {
+        min-width: 180px;
+        background-color: #f0f0f0;
+      }
+      .nav-item {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.3s ease;
+      }
+      .nav-item:hover {
+        background-color: #ddd;
+      }
+      .nav-icon {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      @media (max-width: 600px) {
+        .left-nav {
+          min-width: 60px;
+        }
+        .nav-item span {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-nav">
+        <a href="#" class="nav-item">
+          <i class="material-icons nav-icon">home</i>
+          <span>首页</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="material-icons nav-icon">settings</i>
+          <span>设置</span>
+        </a>
+        <!-- 添加其他导航项 -->
+      </div>
+      <div class="main-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error voluptatem
+          doloremque atque, hic similique quibusdam suscipit maxime ex totam iusto iure dicta minus
+          eius molestiae reiciendis, eos incidunt amet fugit facilis assumenda! Similique quod
+          exercitationem vitae facilis quisquam ducimus sed sint error. Laudantium architecto fuga
+          cupiditate, dolorem autem voluptates voluptate nobis qui eius.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

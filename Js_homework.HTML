@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>课程选择</title>
+    <style>
+      /* * {
+        border: 1px solid black;
+      } */
+      .container {
+        max-width: 960px;
+        margin: 15px auto;
+      }
+      .row {
+        display: flex;
+      }
+      .card {
+        width: auto;
+        padding: 10px;
+        margin: 1px;
+        border: 1px solid white;
+        transition: box-shadow 0.3s ease; /* 添加过渡效果 */
+        border-style: inset;
+      }
+      .card-header {
+        width: 100%;
+        margin: auto;
+      }
+      .card-header img {
+        border-radius: 50%;
+        opacity: 0.5;
+        margin: auto;
+        width: 50%;
+        padding: 0 200px;
+        /* align-items: center; */
+        /* object-fit: cover; */
+      }
+      .card-content {
+        text-align: justify;
+        display: flex;
+      }
+      .card-footer a {
+        display: flex;
+        width: 30%;
+        opacity: 0.5;
+        color: white;
+        background-color: red;
+        text-decoration: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding: 1px;
+      }
+      .card:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* 当鼠标悬浮在卡片上时，添加阴影 */
+      }
+      .card:hover .card-header img {
+        opacity: 1;
+      }
+      .card-footer a:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="courseSelect" onchange="handleCourseChange()">
+      <option value="1">Java</option>
+      <option value="2">Web</option>
+      <option value="3">Python</option>
+    </select>
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://picsum.photos/200/200/?random=1" alt="" />
+          </div>
+          <div class="card-content">
+            <p id="teacherName">授课教师：teacherName</p>
+          </div>
+          <div class="card-footer">
+            <a class="more" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const courseSelect = document.getElementById('courseSelect')
+      const teacherNameDiv = document.getElementById('teacherName')
+
+      const courses = [
+        { id: 1, courseName: 'Java', teacherName: 'BO' },
+        { id: 2, courseName: 'Web', teacherName: 'SUN' },
+        { id: 3, courseName: 'Python', teacherName: 'ZHANG' }
+      ]
+
+      function handleCourseChange() {
+        const courseSelect = document.getElementById('courseSelect')
+        const selectedId = courseSelect.value
+        const selectedCourse = courses.find((course) => course.id === parseInt(selectedId))
+
+        if (selectedCourse) {
+          teacherNameDiv.textContent = `授课教师：${selectedCourse.teacherName}`
+        } else {
+          teacherNameDiv.textContent = ''
+        }
+      }
+    </script>
+    <br />
+    <hr />
+    <br />
+    <input type="text" id="inputBox" placeholder="输入字母" onkeyup="handleInput()" />
+    <button class="reset" onclick="resetInput()">重置</button>
+
+    <script>
+      let timer
+
+      function handleInput() {
+        clearTimeout(timer) // 清除之前的计时器
+        timer = setTimeout(() => {
+          const inputBox = document.getElementById('inputBox')
+          const inputValue = inputBox.value
+          const uppercaseValue = inputValue.toUpperCase()
+          inputBox.value = uppercaseValue
+        }, 500)
+      }
+
+      function resetInput() {
+        const inputBox = document.getElementById('inputBox')
+        inputBox.value = ''
+      }
+    </script>
+  </body>
+</html>
